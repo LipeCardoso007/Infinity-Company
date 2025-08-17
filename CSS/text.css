@@ -2,6 +2,7 @@ h1,h2,h3,p{
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    border: solid 2px #ff0000;
 }
 
 #title,#título,p{
@@ -10,8 +11,15 @@ h1,h2,h3,p{
     text-transform: uppercase;
     text-align: left;
     color: #0019a8;
-    font-size: 2rem;
+    font-size: 1.2rem;
     margin: 10px 0;
+    border: solid 2px #ff0000;
+}
+
+#title{
+    color: #0019a8;
+    font-size: 1.5rem;
+    border: solid 2px #ff0000;
 }
 
 #título{
@@ -27,5 +35,7 @@ p{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
     color: rgb(255, 255, 255);
-    text-transform: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
 }

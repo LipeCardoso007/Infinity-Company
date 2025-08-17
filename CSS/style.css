@@ -5,6 +5,8 @@
 
 body{
     display: flex;
+    margin: 0;
+    padding: 0;
     flex-direction: column;
     max-width: 100dvw;
     min-height: 100dvh;
@@ -106,6 +108,8 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 0;
+    gap: 0;
     align-items: center;
     position: relative;
     width: 55dvw;
