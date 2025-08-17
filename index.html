@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinity Company</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/img.css">
+    <link rel="stylesheet" href="CSS/text.css">
+    <link rel="stylesheet" href="CSS/animações.css">
+    <link rel="stylesheet" href="CSS/formulários.css">
+    <link rel="stylesheet" href="CSS/buttons.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="containers-header" id="contain1">
+            <img class="img-size" src="Logos/4.png" alt="Infinity Company">
+        </div>
+
+        <div class="containers-header" id="contain2">
+            <button onclick="window.location.href='index.html'" class="botões-do-header">HOME</button>
+            <button class="botões-do-header">FAZER ORÇAMENTO</button>
+            <button class="botões-do-header">SOBRE NÓS</button>
+            <button class="botões-do-header">SUPORTE E MANUTENÇÕES</button>
+            <button class="botões-do-header">ENTRAR</button>
+            <button class="botões-do-header">CADASTRAR</button>
+        </div>
+    </header>
+
+    <main id="boxes">
+        <div id="box1">
+            
+            <h1 id="title">Automação e performance web para seu negócio</h1>
+            <p>
+                Tecnologia inteligente para o seu negócio: criamos soluções web que automatizam tarefas
+                e simplificam processos, sem que você precise entender de programação.
+            </p>
+        </div>
+
+        <div id="box2">
+
+            <h1 id="título">SEU PORTAL PESSOAL</h1>
+
+            <form action="cadastro.php" method="post">
+
+                <p class="p-blue">Entre na sua conta e acompanhe seus projetos!</p>
+
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="senha">Senha:</label><br>
+                <input type="password" id="senha" name="senha" required><br><br>
+
+                <div id="div-formulario">
+                    <button class="bnt-formulario" type="submit" id="bnt-cadastrar">Cadastrar</button>
+                    <button id="bnt-jae">Já é cliente?</button>
+                </div>
+
+
+                
+            </form>
+        </div>
+
+    </main>
+
+    <nav>
+        <div id="Aru">
+
+            <div id="Aru1">
+             
+            </div>
+
+        </div>
+    </nav>
+
+    <footer>
+        <div class="containers-footer">
+            <p>© 2023 Infinity Company. Todos os direitos reservados.</p>
+            <p>Desenvolvido por Felipe Gomes Cardoso
+            
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
