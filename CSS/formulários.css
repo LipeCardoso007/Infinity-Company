@@ -1,0 +1,85 @@
+form{
+    display: flex;
+    height: 80dvh;
+    width: 35.25dvw;
+    padding: 2%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: justify;
+    overflow: hidden;
+
+    background-color: blue;
+    border-radius: 12px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+img#fundo-formulário{
+    object-fit: cover;
+    width: auto;
+    height: 100%;
+    position: absolute;
+    object-position: center;
+    z-index: -99;
+
+}
+
+label{
+    color: white;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    max-width: 300px;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#div-formulario{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+.bnt-formulario{
+    border: none;
+    background-color: white;
+    color: blue;
+    border-radius: 4px;
+    font-size: 1.3rem;
+    padding-left: 3px;
+    padding-right: 3px;
+
+}
+
+.bnt-formulario:hover{
+    transform: scale(1.03);
+}
+
+#bnt-jae{
+    border: none;
+    background: none;
+    font-size: 1rem;
+    color: white;
+}
+
+#bnt-jae:hover{
+    border-bottom: 2px solid white;
+}
+
+
+@media (max-width: 400px) {
+    input {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+
