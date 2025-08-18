@@ -2,3 +2,16 @@
     transform: scale(1.03);
     border-bottom: 2px solid rgb(255, 255, 255);
 }
+
+#bnt-orçamento{
+    border: none;
+}
+
+#container-button-fazer-orçamento:hover{
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+#container-button-fazer-orçamento.ativo{
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+

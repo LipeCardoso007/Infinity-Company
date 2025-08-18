@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="CSS/text.css">
     <link rel="stylesheet" href="CSS/animações.css">
     <link rel="stylesheet" href="CSS/formulários.css">
-    <link rel="stylesheet" href="CSS/buttons.css">
+    <link rel="stylesheet" href="CSS/Aru.css">
+    <link rel="stylesheet" href="CSS/nav.css">
 </head>
 
 <body>
@@ -21,7 +22,18 @@
 
         <div class="containers-header" id="contain2">
             <button onclick="window.location.href='index.html'" class="botões-do-header">HOME</button>
-            <button class="botões-do-header">FAZER ORÇAMENTO</button>
+
+            <div id="container-button-fazer-orçamento">
+                <button id="bnt-orçamento" class="botões-do-header" onclick="esconderSubmenu (), toggleBorder()">FAZER ORÇAMENTO</button>
+                <div id="submenu-FO">
+                    <ol>
+                        <li>Entrar</li>
+                        <li>WhatsApp</li>
+                    </ol>
+                </div>
+            </div>
+
+
             <button class="botões-do-header">SOBRE NÓS</button>
             <button class="botões-do-header">SUPORTE E MANUTENÇÕES</button>
             <button class="botões-do-header">ENTRAR</button>
@@ -33,7 +45,7 @@
         <div id="box1">
             
             <h1 id="title">Automação e performance web para seu negócio</h1>
-            <p>
+            <p id="descrição">
                 Tecnologia inteligente para o seu negócio: criamos soluções web que automatizam tarefas
                 e simplificam processos, sem que você precise entender de programação.
             </p>
@@ -47,12 +59,14 @@
 
                 <p class="p-blue">Entre na sua conta:</p>
 
-                <label for="email">Email:</label><br>
+                <label for="email">Email:
                 <input placeholder="Digite seu email" type="email" id="email" name="email" required><br><br>
-
-                <label for="senha">Senha:</label><br>
+                </label><br>
+            
+                <label for="senha">Senha:
                 <input placeholder="Digite sua senha" type="password" id="senha" name="senha" required><br><br>
-
+                </label><br>
+                
                 <div id="div-formulario">
                     <button class="bnt-formulario" type="submit" id="bnt-cadastrar">ENTRAR</button>
                     <button id="bnt-jae">Já é cliente?</button>
@@ -66,9 +80,30 @@
     </main>
 
     <nav>
-        <div id="Aru">
+        <div id="aru">
 
-            <div id="Aru1">
+            <h1 class="h-aru">Conheça nossos serviços!</h1>
+
+            <div id="aru1">
+
+                <ol id="lista2">
+                    <li class="lista2">
+                        <div class="div-no-li"><img src="Logos/lapis.png" alt="">Construção</div>
+                        <p class="p-no-li">Desenvolvemos seu site personalizado. 
+                        Com alto nível de desempenho e qualidade.</p>
+                        <button class="bnt-no-li">Fazer orçamento</button> </li>
+                    <li class="lista2">
+                        <div class="div-no-li"><img src="Logos/configuracoes.png" alt="">Manutenção</div>
+                        <p class="p-no-li">Manutenção e suporte técnico para seu site ou sistema.</p>
+                        <button class="bnt-no-li">Fazer orçamento</button> </li>
+                    <li class="lista2">
+                        <div class="div-no-li"><img src="Logos/megafone.png" alt="">Marketing</div>
+                        <p class="p-no-li">Impulsione sua presença online com nossas estratégias de marketing digital.</p>
+                        <button class="bnt-no-li">Fazer orçamento</button>
+                        
+                    </li>
+                </ol>
+
              
             </div>
 
@@ -77,12 +112,13 @@
 
     <footer>
         <div class="containers-footer">
-            <p>© 2023 Infinity Company. Todos os direitos reservados.</p>
-            <p>Desenvolvido por Felipe Gomes Cardoso
+            <p class="p-footer">2025 Infinity Company.</p>
+            <p class="p-footer">Desenvolvido por Felipe Gomes Cardoso
             
             </p>
         </div>
     </footer>
 
+    <script src="JS/script.js"></script>
 </body>
 </html>
