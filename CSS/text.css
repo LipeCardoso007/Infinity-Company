@@ -23,6 +23,7 @@ h1,h2,h3,p{
     padding: 2%;
 }
 
+
 #título{
     color: rgb(8, 35, 189);
     border-bottom: 2px solid #002fff;
@@ -62,4 +63,25 @@ h1,h2,h3,p{
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
+}
+
+@media (max-width: 768px) {
+    #title{
+        font-size: 1.2rem;
+        padding: 1%;
+        border: none;
+    }
+
+    #title, #descrição{
+        font-size: 1.2rem;
+        text-align: center;
+        
+    }
+
+    #descrição{
+        font-size: 1rem;
+        padding: 1%;
+        border: none;
+
+    }
 }
