@@ -150,8 +150,13 @@ header{
     width: 55%;
     height: 80dvh;
     overflow: hidden;
+}
 
-  
+@media (max-width: 768px) {
+    #box2{
+        width: 100%;
+        height: auto;
+    }
 }
 
 #container-button-fazer-orçamento{
@@ -184,7 +189,7 @@ header{
 ol{
     display: flex;
     height: 100%;
-    flex-direction: column;
+
     justify-content: space-around;
     align-items: center;
     margin: 0;

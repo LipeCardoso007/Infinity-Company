@@ -11,6 +11,7 @@ form{
 
 }
 
+
 label{
  
     color: white;
@@ -79,3 +80,10 @@ input {
     }
 }
 
+@media (max-width: 768px) {
+    form{
+        width: 90%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+}

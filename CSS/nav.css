@@ -95,7 +95,6 @@
 
 #aru1{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 90%;
@@ -105,4 +104,12 @@
     padding: 20px;
     border: 2px solid #002fff;
     border-radius: 10px;}
+
+    @media (max-width: 768px) {
+        #lista2{
+            flex-direction: column;
+            align-items: center;
+            padding-left: 0;    
+        }
+    }
 
