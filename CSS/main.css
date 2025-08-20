@@ -1,0 +1,38 @@
+#box-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+    width: 110dvw;
+    margin-top: 10dvh;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    background: linear-gradient(135deg, rgb(0, 0, 54), rgb(1, 92, 228));}
+
+#box1-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90dvw;
+    border: 2px solid rgb(255, 255, 255);
+    height: 50%;
+    padding: 2rem;
+}
+
+.h-main{
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-bottom: 1rem;
+    width: 60%;
+}
+
+.p-main{
+    font-size: 1.2rem;
+    width: 60%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+

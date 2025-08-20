@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Infinity Company</title>
+
+    <!-- Estilos -->
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/img.css">
     <link rel="stylesheet" href="CSS/text.css">
@@ -11,114 +13,228 @@
     <link rel="stylesheet" href="CSS/formulários.css">
     <link rel="stylesheet" href="CSS/Aru.css">
     <link rel="stylesheet" href="CSS/nav.css">
+    <link rel="stylesheet" href="CSS/main.css">
 </head>
-
 <body>
 
+
+    <!-- Header -->
     <header>
         <div class="containers-header" id="contain1">
-            <img class="img-size" src="Logos/4.png" alt="Infinity Company">
+            <img class="img-size" src="Logos/Logo2.png" alt="Infinity Company">
         </div>
 
         <div class="containers-header" id="contain2">
             <button onclick="window.location.href='index.html'" class="botões-do-header">HOME</button>
 
             <div id="container-button-fazer-orçamento">
-                <button id="bnt-orçamento" class="botões-do-header" onclick="esconderSubmenu (), toggleBorder()">FAZER ORÇAMENTO</button>
+                <button id="bnt-orçamento" class="botões-do-header" onclick="esconderSubmenu(), toggleBorder()">FAZER ORÇAMENTO</button>
                 <div id="submenu-FO">
-                    <ol>
-                        <li>Entrar</li>
-                        <li>WhatsApp</li>
+                    <ol id="lista1">
+                        <li class="lista1">Mensagem</li>
+                        <li class="lista1">WhatsApp</li>
                     </ol>
                 </div>
             </div>
 
+            <!-- Estilo interno (pode ir para CSS externo futuramente) -->
+            <style>
+                #lista1 {
+                    display: flex;
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                    justify-content: space-evenly;
+                    flex-direction: column;
+                    color: #ffffff;
+                    font-size: 0.8rem;
+                }
+                .lista1 {
+                    display: flex;
+                    font-family: Arial, Helvetica, sans-serif;
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                    flex-direction: column;
+                    color: #ffffff;
+                    font-size: 0.9rem;
+                    cursor: pointer;
+                    font-weight: normal;
+                    transition: none;
+                }
+                .lista1:hover {
+                    transform: scale(1.05);
+                }
+                .lista1:active {
+                    color: #ffffff;
+                    font-weight: bold;
+                    font-weight: 1rem;
+                }
+                .lista1::selection {
+                    background-color: transparent;
+                    color: inherit;
+                }
+            </style>
 
             <button class="botões-do-header">SOBRE NÓS</button>
             <button class="botões-do-header">SUPORTE E MANUTENÇÕES</button>
-            <button class="botões-do-header">ENTRAR</button>
-            <button class="botões-do-header">CADASTRAR</button>
+
+            <button id="bnt-modo-escuro" class="botões-do-header">
+                <img src="Logos/brilho.png" alt="Ativar Modo Escuro" id="img-modo-escuro" onclick="toggleDarkMode()">
+            </button>
         </div>
     </header>
 
+    <!-- Main -->
     <main id="boxes">
         <div id="box1">
-            
             <h1 id="title">Automação e performance web para seu negócio</h1>
             <p id="descrição">
                 Tecnologia inteligente para o seu negócio: criamos soluções web que automatizam tarefas
                 e simplificam processos, sem que você precise entender de programação.
             </p>
+
+            <div id="div-bnt-box1">
+                <button class="mais-sobre">Quer saber mais sobre nós?</button>
+                <button class="mais-sobre" onclick="window.location.href='cadastro.php'">FAZER ORÇAMENTO</button>
+            </div>
         </div>
 
         <div id="box2">
-
-            <h1 id="título">SEU PORTAL PESSOAL</h1>
-
-            <form action="cadastro.php" method="post">
-
-                <p class="p-blue">Entre na sua conta:</p>
-
-                <label for="email">Email:
-                <input placeholder="Digite seu email" type="email" id="email" name="email" required><br><br>
-                </label><br>
-            
-                <label for="senha">Senha:
-                <input placeholder="Digite sua senha" type="password" id="senha" name="senha" required><br><br>
-                </label><br>
-                
-                <div id="div-formulario">
-                    <button class="bnt-formulario" type="submit" id="bnt-cadastrar">ENTRAR</button>
-                    <button id="bnt-jae">Já é cliente?</button>
+            <div id="aru">
+                <h1 class="h-aru">Conheça nossos serviços!</h1>
+                <div id="aru1">
+                    <ol id="ol-lista2">
+                        <li class="li-lista2">
+                            <div class="div-no-li">
+                                <img src="Logos/lapis.png" alt="">Construção
+                            </div>
+                            <p class="p-no-li">Desenvolvemos seu site personalizado. Com desempenho e qualidade.</p>
+                            <button class="bnt-no-li">Fazer orçamento</button>
+                        </li>
+                        <li class="li-lista2">
+                            <div class="div-no-li">
+                                <img src="Logos/configuracoes.png" alt="">Manutenção
+                            </div>
+                            <p class="p-no-li">Manutenção e suporte técnico para seu site ou sistema.</p>
+                            <button class="bnt-no-li">Fazer orçamento</button>
+                        </li>
+                        <li class="li-lista2">
+                            <div class="div-no-li">
+                                <img src="Logos/megafone.png" alt="">Marketing
+                            </div>
+                            <p class="p-no-li">Impulsione sua presença online com nossas estratégias de marketing digital.</p>
+                            <button class="bnt-no-li">Fazer orçamento</button>
+                        </li>
+                    </ol>
                 </div>
-
-
-                
-            </form>
+            </div>
         </div>
-
     </main>
 
-    <nav>
-        <div id="aru">
+    <!-- Formulário -->
+    <nav id="nav-formulario">
 
-            <h1 class="h-aru">Conheça nossos serviços!</h1>
+        <div id="nav-box1">
 
-            <div id="aru1">
+            <div id="box-nav-texto">
+                <img id="img-balao" src="Logos/rede-social.png" alt="">
 
-                <ol id="lista2">
-                    <li class="lista2">
-                        <div class="div-no-li"><img src="Logos/lapis.png" alt="">Construção</div>
-                        <p class="p-no-li">Desenvolvemos seu site personalizado. 
-                        Com alto nível de desempenho e qualidade.</p>
-                        <button class="bnt-no-li">Fazer orçamento</button> </li>
-                    <li class="lista2">
-                        <div class="div-no-li"><img src="Logos/configuracoes.png" alt="">Manutenção</div>
-                        <p class="p-no-li">Manutenção e suporte técnico para seu site ou sistema.</p>
-                        <button class="bnt-no-li">Fazer orçamento</button> </li>
-                    <li class="lista2">
-                        <div class="div-no-li"><img src="Logos/megafone.png" alt="">Marketing</div>
-                        <p class="p-no-li">Impulsione sua presença online com nossas estratégias de marketing digital.</p>
-                        <button class="bnt-no-li">Fazer orçamento</button>
-                        
-                    </li>
-                </ol>
-
-             
+                <h1 id="nav-text-h1">Criamos a pagina do seu negócio!</h1>
+                <p id="nav-text-p">Te colocamos no mundo digital <br>É exsencial estar conectado!</p>
             </div>
 
+            <style>
+                #img-balao {
+                    width: 15%;
+                    height: auto;
+                    margin-bottom: 4%;
+                }
+
+                #nav-text-h1,
+                #nav-text-p {
+                    font-family: Arial, Helvetica, sans-serif;
+    
+                }
+
+                #nav-text-h1 {
+                    color: #010044;
+                    background-color: white;
+                    width: 80%;
+                    padding: 0.5rem;
+                    border-radius: 0.8rem ;
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    text-align: center;
+                }
+
+                #nav-text-p {
+                    color: #ffffff;
+                    font-size: 1rem;
+                    text-align: left;
+                    text-transform: initial;
+                }
+            </style>
+
+
+        </div>
+
+
+        <div id="nav-box2">
+            <h1 id="título">Precisa de um projeto web? Conte com a gente!</h1>
+            <form action="cadastro.php" method="post">
+                <img id="img-entrar" src="Logos/comentario-alt.png" alt="">
+                <style>
+                    #img-entrar {
+                        width: 2dvw;
+                        height: auto;
+                        margin-bottom: 2%;
+                    }
+                </style>
+                <p class="p-blue">envie uma mensagem</p>
+                <label for="email">
+                    Seu email:
+                    <input placeholder="Digite seu email" type="email" id="email" name="email" required>
+                </label><br>
+                <label for="senha">
+                    Seu telefone:
+                    <input placeholder="Digite sua senha" type="password" id="senha" name="senha" required>
+                </label><br>
+                <label for="comentario">
+                    Deixe uma mensagem:
+                    <textarea placeholder="Digite seu comentário" id="comentario" name="comentario" required></textarea>
+                </label><br>
+                <div id="div-formulario">
+                    <button class="bnt-formulario" type="submit" id="bnt-cadastrar">ENTRAR</button>
+                    <button id="bnt-jae">Não tem conta?</button>
+                </div>
+            </form>
         </div>
     </nav>
 
+    <main>
+        <div id="box-main">
+            <h1 class="h-main">O que nossos serviços oferecem?</h1>
+            <p class="p-main">Na Infinity Company, oferecemos soluções personalizadas que se adaptam às suas necessidades. Nossa equipe de especialistas está pronta para transformar suas ideias em realidade.</p>
+            <div id="box1-main">
+                <img src="Logos/seguranca.png" alt="">
+                <img src="Logos/atendimento.png" alt="">
+                <img src="Logos/qualidade.png" alt="">
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
     <footer>
         <div class="containers-footer">
             <p class="p-footer">2025 Infinity Company.</p>
-            <p class="p-footer">Desenvolvido por Felipe Gomes Cardoso
-            
-            </p>
+            <p class="p-footer">Desenvolvido por Felipe Gomes Cardoso</p>
         </div>
     </footer>
 
+
+    <!-- Scripts -->
     <script src="JS/script.js"></script>
 </body>
 </html>

@@ -3,6 +3,11 @@
     border-bottom: 2px solid rgb(255, 255, 255);
 }
 
+#bnt-modo-escuro:hover{
+    transform: scale(1.1);
+    border: none;
+}
+
 #bnt-orçamento{
     border: none;
 }
@@ -15,3 +20,36 @@
     border-bottom: 2px solid rgb(255, 255, 255);
 }
 
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -150%;
+    width: 400%; 
+    height: 200%;
+    background: linear-gradient( 135deg,rgba(23, 6, 255, 1), rgba(0, 1, 59,1), rgba(0, 1, 59,1), rgba(0, 1, 59,1) );
+    transform: skewX(-25deg);
+    animation: luxPass 6s linear infinite;
+    z-index: 0;
+    pointer-events: none;
+}
+
+@keyframes luxPass {
+    0% {
+        left: -150%;
+    }
+    50% {
+        left: -10%;
+    }
+
+    100% {
+        left: -150%;
+    }
+}
+
+
+/* 4. Conteúdo do header acima da luz */
+header * {
+    position: relative;
+    z-index: 1; /* ADICIONADO */
+}
