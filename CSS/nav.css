@@ -4,9 +4,10 @@
     flex-direction: row;
     width: 90dvw;
     height: 90dvh;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.25), 0 1px 3px rgba(0,0,0,0.08);
     border-radius: 2rem;
     justify-content: center;
+    background-color: #f3f3f3;
     align-items: center;
  
 
@@ -52,6 +53,32 @@
     text-align: center;
     animation: pulse 2s infinite;
 
+}
+#img-balao {
+    width:14% ;
+    height: auto;
+    margin-bottom: 4%;
+}
+#nav-text-h1,
+#nav-text-p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+#nav-text-h1 {
+    color: #010044;
+    background-color: white;
+    width: 80%;
+    padding: 0.5rem;
+    border-radius: 0.8rem ;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+#nav-text-p {
+    color: #ffffff;
+    font-size: 1rem;
+    text-align: left;
+    text-transform: initial;
 }
 
 @keyframes pulse {

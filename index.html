@@ -15,7 +15,23 @@
     <link rel="stylesheet" href="CSS/nav.css">
     <link rel="stylesheet" href="CSS/main.css">
 </head>
+
 <body>
+    <div id="linha-azul"></div>
+    <style>
+        #linha-azul {
+            display: flex;
+            margin-top: 11dvh;
+            width: 20%;
+            height: 100%;
+            background-color: #010044;
+            position: fixed;
+            top: 0;
+            overflow: hidden;
+            z-index: -1000;
+        }
+
+    </style>
 
 
     <!-- Header -->
@@ -101,34 +117,15 @@
         </div>
 
         <div id="box2">
-            <div id="aru">
-                <h1 class="h-aru">Conheça nossos serviços!</h1>
-                <div id="aru1">
-                    <ol id="ol-lista2">
-                        <li class="li-lista2">
-                            <div class="div-no-li">
-                                <img src="Logos/lapis.png" alt="">Construção
-                            </div>
-                            <p class="p-no-li">Desenvolvemos seu site personalizado. Com desempenho e qualidade.</p>
-                            <button class="bnt-no-li">Fazer orçamento</button>
-                        </li>
-                        <li class="li-lista2">
-                            <div class="div-no-li">
-                                <img src="Logos/configuracoes.png" alt="">Manutenção
-                            </div>
-                            <p class="p-no-li">Manutenção e suporte técnico para seu site ou sistema.</p>
-                            <button class="bnt-no-li">Fazer orçamento</button>
-                        </li>
-                        <li class="li-lista2">
-                            <div class="div-no-li">
-                                <img src="Logos/megafone.png" alt="">Marketing
-                            </div>
-                            <p class="p-no-li">Impulsione sua presença online com nossas estratégias de marketing digital.</p>
-                            <button class="bnt-no-li">Fazer orçamento</button>
-                        </li>
-                    </ol>
+
+            <div id="nav-box1">
+                <div id="box-nav-texto">
+                    <img id="img-balao" src="Logos/rede-social.png" alt="">
+                    <h1 id="nav-text-h1">Criamos a pagina do seu negócio!</h1>
+                    <p id="nav-text-p">Te colocamos no mundo digital <br>É exsencial estar conectado!</p>
                 </div>
-            </div>
+            </div>  
+           
         </div>
     </main>
 
@@ -144,44 +141,10 @@
                 <p id="nav-text-p">Te colocamos no mundo digital <br>É exsencial estar conectado!</p>
             </div>
 
-            <style>
-                #img-balao {
-                    width: 15%;
-                    height: auto;
-                    margin-bottom: 4%;
-                }
-
-                #nav-text-h1,
-                #nav-text-p {
-                    font-family: Arial, Helvetica, sans-serif;
-    
-                }
-
-                #nav-text-h1 {
-                    color: #010044;
-                    background-color: white;
-                    width: 80%;
-                    padding: 0.5rem;
-                    border-radius: 0.8rem ;
-                    font-size: 1.2rem;
-                    font-weight: bold;
-                    text-transform: uppercase;
-                    text-align: center;
-                }
-
-                #nav-text-p {
-                    color: #ffffff;
-                    font-size: 1rem;
-                    text-align: left;
-                    text-transform: initial;
-                }
-            </style>
-
-
         </div>
 
 
-        <div id="nav-box2">
+        <div id="nav-box2"> 
             <h1 id="título">Precisa de um projeto web? Conte com a gente!</h1>
             <form action="cadastro.php" method="post">
                 <img id="img-entrar" src="Logos/comentario-alt.png" alt="">
@@ -213,14 +176,28 @@
         </div>
     </nav>
 
-    <main>
+    <main id="main">
         <div id="box-main">
             <h1 class="h-main">O que nossos serviços oferecem?</h1>
             <p class="p-main">Na Infinity Company, oferecemos soluções personalizadas que se adaptam às suas necessidades. Nossa equipe de especialistas está pronta para transformar suas ideias em realidade.</p>
             <div id="box1-main">
-                <img src="Logos/seguranca.png" alt="">
-                <img src="Logos/atendimento.png" alt="">
-                <img src="Logos/qualidade.png" alt="">
+                <ol>
+                    <li>
+                        <img src="Logos/seguranca.png" alt="">
+                        <h1 class="h1-main">Segurança</h1>
+                        <p class="p-main">Garantimos a proteção dos seus dados com as melhores práticas de segurança cibernética.</p>
+                    </li>
+                    <li>
+                        <img src="Logos/atendimento.png" alt="">
+                        <h1 class="h1-main">Atendimento 24/7</h1>
+                        <p class="p-main">Nossa equipe está disponível a qualquer hora para ajudar você com suas necessidades.</p>
+                    </li>
+                    <li>
+                        <img src="Logos/qualidade.png" alt="">
+                        <h1 class="h1-main">Qualidade</h1>
+                        <p class="p-main">Comprometidos em entregar soluções de alta qualidade que superam suas expectativas.</p>
+                    </li>
+                </ol>
             </div>
         </div>
     </main>
