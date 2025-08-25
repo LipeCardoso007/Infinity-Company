@@ -74,5 +74,33 @@
         </div>
     </header>
 
+            <form action="cadastro.php" method="post">
+            <img id="img-entrar" src="Logos/comentario-alt.png" alt="">
+            <style>
+                #img-entrar {
+                    width: 2dvw;
+                    height: auto;
+                    margin-bottom: 2%;
+                }
+            </style>
+            <p class="p-blue">envie uma mensagem</p>
+            <label for="email">
+                Seu email:
+                <input placeholder="Digite seu email" type="email" id="email" name="email" required>
+            </label><br>
+            <label for="senha">
+                Seu telefone:
+                <input placeholder="Digite sua senha" type="password" id="senha" name="senha" required>
+            </label><br>
+            <label for="comentario">
+                Deixe uma mensagem:
+                <textarea placeholder="Digite seu comentário" id="comentario" name="comentario" required></textarea>
+            </label><br>
+            <div id="div-formulario">
+                <button class="bnt-formulario" type="submit" id="bnt-cadastrar">ENTRAR</button>
+                <button id="bnt-jae">Não tem conta?</button>
+            </div>
+        </form>
+
 </body>
 </html>  

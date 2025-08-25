@@ -1,16 +1,14 @@
-.img-size{
-    width: auto;
-    height: 55%;
-
-
-}
-
-#img-box1{
-    width:55%;
-}
-
-#img-modo-escuro{
-    width: 2dvw;
-    height: auto;
-    margin-left: 1%;
+#sobrepor-formulário{
+    display: none;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    z-index:99999;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);       
+    -webkit-backdrop-filter: blur(5px);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
 }

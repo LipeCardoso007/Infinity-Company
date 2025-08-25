@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -15,24 +15,37 @@
     <link rel="stylesheet" href="CSS/nav.css">
     <link rel="stylesheet" href="CSS/main.css">
 </head>
-
 <body>
-    <div id="linha-azul"></div>
-    <style>
-        #linha-azul {
-            display: flex;
-            margin-top: 11dvh;
-            width: 20%;
-            height: 100%;
-            background-color: #010044;
-            position: fixed;
-            top: 0;
-            overflow: hidden;
-            z-index: -1000;
-        }
+    <div id="sobrepor-formulário">
 
-    </style>
+        <form action="cadastro.php" method="post">
+            <button id="bnt-fechar"><img id="img-bnt-voltar" src="Logos/voltar.png" alt=""></button>
+            <img id="img-entrar" src="Logos/comentario-alt.png" alt="">
+            <style>
+                #img-entrar {
+                    width: 3dvw;
+                    height: auto;
+                }
+            </style>
+            <p class="p-blue">envie uma mensagem</p>
+            <label for="email">
+                Seu email:
+                <input placeholder="Digite seu email" type="email" id="email" name="email" required>
+            </label><br>
+            <label for="senha">
+                Seu telefone:
+                <input placeholder="Digite sua senha" type="password" id="senha" name="senha" required>
+            </label><br>
+            <label for="comentario">
+                Deixe uma mensagem:
+                <textarea placeholder="Digite seu comentário" id="comentario" name="comentario" required></textarea>
+            </label><br>
+            <div id="div-formulario">
+                <button class="bnt-formulario" type="submit" id="bnt-cadastrar">ENVIAR</button>
+            </div>
+        </form>
 
+    </div>
 
     <!-- Header -->
     <header>
@@ -43,17 +56,7 @@
         <div class="containers-header" id="contain2">
             <button onclick="window.location.href='index.html'" class="botões-do-header">HOME</button>
 
-            <div id="container-button-fazer-orçamento">
-                <button id="bnt-orçamento" class="botões-do-header" onclick="esconderSubmenu(), toggleBorder()">FAZER ORÇAMENTO</button>
-                <div id="submenu-FO">
-                    <ol id="lista1">
-                        <li class="lista1">Mensagem</li>
-                        <li class="lista1">WhatsApp</li>
-                    </ol>
-                </div>
-            </div>
-
-            <!-- Estilo interno (pode ir para CSS externo futuramente) -->
+            <!-- Estilo interno -->
             <style>
                 #lista1 {
                     display: flex;
@@ -93,7 +96,7 @@
             </style>
 
             <button class="botões-do-header">SOBRE NÓS</button>
-            <button class="botões-do-header">SUPORTE E MANUTENÇÕES</button>
+            <button class="botões-do-header">SUPORTE E MANUTENÇÃO</button>
 
             <button id="bnt-modo-escuro" class="botões-do-header">
                 <img src="Logos/brilho.png" alt="Ativar Modo Escuro" id="img-modo-escuro" onclick="toggleDarkMode()">
@@ -104,101 +107,152 @@
     <!-- Main -->
     <main id="boxes">
         <div id="box1">
-            <h1 id="title">Automação e performance web para seu negócio</h1>
+            <h1 id="title">Automação e performance web para o seu negócio</h1>
             <p id="descrição">
                 Tecnologia inteligente para o seu negócio: criamos soluções web que automatizam tarefas
                 e simplificam processos, sem que você precise entender de programação.
             </p>
 
             <div id="div-bnt-box1">
-                <button class="mais-sobre">Quer saber mais sobre nós?</button>
-                <button class="mais-sobre" onclick="window.location.href='cadastro.php'">FAZER ORÇAMENTO</button>
+                <button class="mais-sobre" onclick="rolar()">Fazer orçamento
+                </button>
             </div>
         </div>
 
         <div id="box2">
-
-            <div id="nav-box1">
-                <div id="box-nav-texto">
-                    <img id="img-balao" src="Logos/rede-social.png" alt="">
-                    <h1 id="nav-text-h1">Criamos a pagina do seu negócio!</h1>
-                    <p id="nav-text-p">Te colocamos no mundo digital <br>É exsencial estar conectado!</p>
+            <div id="box-nav-texto">
+                <img id="img-balao" src="Logos/rede-social.png" alt="">
+                <h1 id="nav-text-h1">Fale conosco!</h1>
+                <p id="nav-text-p">Te colocamos no mundo digital</p>
+                <div>
+                    <button class="bnt-fale" id="bnt-whatsapp">WhatsApp</button>
+                    <button class="bnt-fale">Enviar Proposta</button>
                 </div>
-            </div>  
-           
+                
+            </div>
         </div>
     </main>
 
     <!-- Formulário -->
-    <nav id="nav-formulario">
-
-        <div id="nav-box1">
-
-            <div id="box-nav-texto">
-                <img id="img-balao" src="Logos/rede-social.png" alt="">
-
-                <h1 id="nav-text-h1">Criamos a pagina do seu negócio!</h1>
-                <p id="nav-text-p">Te colocamos no mundo digital <br>É exsencial estar conectado!</p>
-            </div>
-
-        </div>
-
-
-        <div id="nav-box2"> 
-            <h1 id="título">Precisa de um projeto web? Conte com a gente!</h1>
-            <form action="cadastro.php" method="post">
-                <img id="img-entrar" src="Logos/comentario-alt.png" alt="">
-                <style>
-                    #img-entrar {
-                        width: 2dvw;
-                        height: auto;
-                        margin-bottom: 2%;
-                    }
-                </style>
-                <p class="p-blue">envie uma mensagem</p>
-                <label for="email">
-                    Seu email:
-                    <input placeholder="Digite seu email" type="email" id="email" name="email" required>
-                </label><br>
-                <label for="senha">
-                    Seu telefone:
-                    <input placeholder="Digite sua senha" type="password" id="senha" name="senha" required>
-                </label><br>
-                <label for="comentario">
-                    Deixe uma mensagem:
-                    <textarea placeholder="Digite seu comentário" id="comentario" name="comentario" required></textarea>
-                </label><br>
-                <div id="div-formulario">
-                    <button class="bnt-formulario" type="submit" id="bnt-cadastrar">ENTRAR</button>
-                    <button id="bnt-jae">Não tem conta?</button>
-                </div>
-            </form>
-        </div>
-    </nav>
-
-    <main id="main">
-        <div id="box-main">
-            <h1 class="h-main">O que nossos serviços oferecem?</h1>
-            <p class="p-main">Na Infinity Company, oferecemos soluções personalizadas que se adaptam às suas necessidades. Nossa equipe de especialistas está pronta para transformar suas ideias em realidade.</p>
-            <div id="box1-main">
-                <ol>
-                    <li>
-                        <img src="Logos/seguranca.png" alt="">
-                        <h1 class="h1-main">Segurança</h1>
-                        <p class="p-main">Garantimos a proteção dos seus dados com as melhores práticas de segurança cibernética.</p>
+    <section id="section-lista2">
+        <div id="section-box1"> 
+            <h1 class="h-aru">Conheça nossos serviços!</h1>
+            <p class="p-aru">Confira as soluções que desenvolvemos para facilitar o seu dia a dia.</p>
+            <div id="aru1">
+                <ol id="ol-lista2">
+                    <li class="li-lista2">
+                        <div class="div-no-li">
+                            <img src="Logos/lapis.png" alt="">Construção
+                        </div>
+                        <p class="p-no-li">Desenvolvemos seu site personalizado com desempenho e qualidade.</p>
+                        <button class="bnt-no-li">Fazer orçamento</button>
                     </li>
-                    <li>
-                        <img src="Logos/atendimento.png" alt="">
-                        <h1 class="h1-main">Atendimento 24/7</h1>
-                        <p class="p-main">Nossa equipe está disponível a qualquer hora para ajudar você com suas necessidades.</p>
+                    <li class="li-lista2">
+                        <div class="div-no-li">
+                            <img src="Logos/configuracoes.png" alt="">Manutenção
+                        </div>
+                        <p class="p-no-li">Manutenção e suporte técnico para o seu site ou sistema.</p>
+                        <button class="bnt-no-li">Fazer orçamento</button>
                     </li>
-                    <li>
-                        <img src="Logos/qualidade.png" alt="">
-                        <h1 class="h1-main">Qualidade</h1>
-                        <p class="p-main">Comprometidos em entregar soluções de alta qualidade que superam suas expectativas.</p>
+                    <li class="li-lista2">
+                        <div class="div-no-li">
+                            <img src="Logos/megafone.png" alt="">Marketing
+                        </div>
+                        <p class="p-no-li">Impulsione sua presença online com nossas estratégias de marketing digital.</p>
+                        <button class="bnt-no-li">Fazer orçamento</button>
                     </li>
                 </ol>
             </div>
+             
+        </div>
+    </section>
+
+    <main id="main">
+
+        <h1 class="h-main">Selecione a solução certa para o seu negócio:</h1>
+
+        <ol id="ol-main">
+            <li class="li-main">
+                <img class="main-img" src="Logos/adicionar-documento.png" alt="">        
+                <h1 class="h1-main">Landing Pages</h1>            
+                <p class="p-main">
+                    Criação de páginas de destino otimizadas para conversão, projetadas para captar leads e impulsionar vendas.
+                </p>
+            
+            </li>
+            <li class="li-main">                
+                <img class="main-img" src="Logos/engrenagens.png" alt=""> 
+                <h1 class="h1-main">Manutenção</h1>
+                <p class="p-main">
+                    Serviços de manutenção contínua e migração segura de sites e sistemas para garantir desempenho e segurança.
+                </p>
+            </li>
+            
+            <li class="li-main">
+                <img class="main-img" src="Logos/carrinho-de-compras.png" alt=""> 
+                <h1 class="h1-main">E-commerce</h1>
+                <p class="p-main">
+                    Criação de lojas virtuais completas e personalizadas para vender seus produtos online com facilidade.
+                </p>
+            </li>
+        </ol>
+
+        <div id="beneficios">
+            <h1 id="habili">Nossas Habilidades:</h1>
+
+            <style>
+                #habili{
+                    color: white;
+                    margin-bottom: 10vh;
+                }
+            </style>
+
+            <ol id="ol-lista3">
+
+                <li class="li-lista3">
+                    <img src="" alt="">
+                    <h2 class="h-li3">Carregamento rápido</h2>
+                    <p class="p-li3">Desenvolvemos páginas otimizadas para alta velocidade de 
+                        carregamento, reduzindo o tempo de espera e melhorando a experiência do usuário.</p>
+                </li>
+                <li class="li-lista3">
+                    <img src="" alt="">
+                    <h2 class="h-li3">Otimizado para diversos dispositivos</h2>
+                    <p class="p-li3">Entregamos o site 100% responsivo, adaptado para desktop, tablets e smartphones, 
+                        proporcionando a melhor experiência para todos os usuários.</p>
+                </li>
+
+                <li class="li-lista3">
+                    <img src="" alt="">
+                    <h2 class="h-li3">Layout totalmente personalizado</h2>
+                    <p class="p-li3">Criamos um design exclusivo, alinhado à identidade visual da sua marca, 
+                        garantindo um site único e diferenciado para o seu negócio.</p>
+                </li>
+
+                <li class="li-lista3">
+                    <img src="" alt="">
+                    <h2 class="h-li3">UX/UI Designer aplicado</h2>
+                    <p class="p-li3">Aplicamos os principais conceitos da experiência do usuário, tornando o site intuitivo, 
+                        agradável e otimizado, garantindo uma navegação fluida.</p>
+                </li>
+
+                <li class="li-lista3">
+                    <img src="" alt="">
+                    <h2 class="h-li3">Identidade Visual</h2>
+                    <p class="p-li3">Logotipo
+ Paleta de Cores
+ Elementos Gráficos e Ícones
+ Aplicações e Diretrizes
+ Tipografia</p>
+                </li>
+
+                <li class="li-lista3">
+                    <img src="" alt="">
+                    <h1 class="h-li3">UX/UI Designer aplicado</h1>
+                    <p class="p-li3"></p>
+                </li>
+            
+            </ol>
         </div>
     </main>
 
@@ -209,7 +263,6 @@
             <p class="p-footer">Desenvolvido por Felipe Gomes Cardoso</p>
         </div>
     </footer>
-
 
     <!-- Scripts -->
     <script src="JS/script.js"></script>

@@ -1,9 +1,10 @@
 form{
     display: flex;
-    height: 80%;
+    position: relative;
+    height: auto;
     margin: 2%;
-    width: 80%  ;
-    padding: 3%;    
+    width: 35vw  ;
+    padding: 2% 3%;    
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -80,6 +81,21 @@ input, textarea{
 
 .bnt-formulario:hover{
     color: rgb(0, 0, 0);
+}
+
+#bnt-fechar{
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    align-items: center;
+    color: white;
+    font-size: 1rem;
+    background: none;
+    border: none;
+}
+
+#img-bnt-voltar{
+    width: 4%;
 }
 
 #bnt-jae{
