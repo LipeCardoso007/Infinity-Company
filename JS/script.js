@@ -27,3 +27,8 @@ function rolar() {
   document.getElementById("main").scrollIntoView({
     behavior: "smooth"})
 }
+
+function ativar() {
+  const form = document.getElementById("sobrepor-formulário");
+  form.classList.toggle("ativo");
+}

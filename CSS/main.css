@@ -61,6 +61,10 @@ nav{
     position: relative;    
 }
 
+.li-lista3:hover{
+    transform: scale(1.05);
+}
+
 
 
 

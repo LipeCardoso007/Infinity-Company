@@ -46,10 +46,9 @@
     width: 50%;
     padding: 2rem 1rem;
     height:40%;
-    background: linear-gradient(135deg, rgb(1, 92, 228), rgb(0, 0, 54));
+    background: linear-gradient(135deg, rgb(0, 58, 184), rgb(0, 10, 68));
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     border-radius: 1rem;
-    font-size: 1.5rem;
     text-align: center;
     animation: pulse 2s infinite;
 
@@ -65,7 +64,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 #nav-text-h1 {
-    color: #010044;
+    color: #004209;
     background-color: white;
     width: 80%;
     padding: 0.5rem 1rem;

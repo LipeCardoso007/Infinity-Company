@@ -1,5 +1,5 @@
 #sobrepor-formulário{
-    display: none;
+    display: flex;
     position: fixed;
     justify-content: center;
     align-items: center;
@@ -11,4 +11,17 @@
     left: 0;
     width: 100vw;
     height: 100vh;
+    transition: all 1s ease;
+    transform: translateY(100vh);
+    visibility: hidden;
+}
+
+#sobrepor-formulário.ativo {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+}
+
+#img-balao{
+    filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.6));
 }

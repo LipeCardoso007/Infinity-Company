@@ -72,15 +72,16 @@ p{
 .h-li3{
     color: rgb(255, 255, 255);
     text-align: left;
+    text-transform: uppercase;
     width: 80%;
-    height: 20%;
+    height: 10%;
 }
 
 .p-li3{
     color: rgb(255, 255, 255);
     text-align: left;
     width: 80%;
-    height: 60%;
+    height: 40%;
 
 }
 

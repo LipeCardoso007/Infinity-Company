@@ -19,7 +19,7 @@
     <div id="sobrepor-formulário">
 
         <form action="cadastro.php" method="post">
-            <button id="bnt-fechar"><img id="img-bnt-voltar" src="Logos/voltar.png" alt=""></button>
+            <img id="img-bnt-voltar" onclick="ativar()" src="Logos/voltar.png" alt="Fechar">
             <img id="img-entrar" src="Logos/comentario-alt.png" alt="">
             <style>
                 #img-entrar {
@@ -87,8 +87,7 @@
                 .lista1:active {
                     color: #ffffff;
                     font-weight: bold;
-                    font-weight: 1rem;
-                }
+                   }
                 .lista1::selection {
                     background-color: transparent;
                     color: inherit;
@@ -121,7 +120,7 @@
 
         <div id="box2">
             <div id="box-nav-texto">
-                <img id="img-balao" src="Logos/rede-social.png" alt="">
+                <img id="img-balao" src="Logos/whatsapp.png" alt="">
                 <h1 id="nav-text-h1">Fale conosco!</h1>
                 <p id="nav-text-p">Te colocamos no mundo digital</p>
                 <div>
@@ -172,7 +171,7 @@
         <h1 class="h-main">Selecione a solução certa para o seu negócio:</h1>
 
         <ol id="ol-main">
-            <li class="li-main">
+            <li class="li-main" onclick="ativar()">
                 <img class="main-img" src="Logos/adicionar-documento.png" alt="">        
                 <h1 class="h1-main">Landing Pages</h1>            
                 <p class="p-main">
@@ -180,7 +179,7 @@
                 </p>
             
             </li>
-            <li class="li-main">                
+            <li class="li-main" onclick="ativar()"">                
                 <img class="main-img" src="Logos/engrenagens.png" alt=""> 
                 <h1 class="h1-main">Manutenção</h1>
                 <p class="p-main">
@@ -188,7 +187,7 @@
                 </p>
             </li>
             
-            <li class="li-main">
+            <li class="li-main" onclick="ativar()">
                 <img class="main-img" src="Logos/carrinho-de-compras.png" alt=""> 
                 <h1 class="h1-main">E-commerce</h1>
                 <p class="p-main">
