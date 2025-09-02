@@ -8,13 +8,16 @@ h1,h2,h3,p{
     
 }
 
-h1{
-    font-size: clamp(1rem, 1rem + 5vw, 2rem);
+h1 {
+  font-size: clamp(1.2rem, 3vw, 2rem);
 }
 
-p{
-    font-size: clamp(0.5rem, 1rem + 3vw, 1em);
+h2 {
+  font-size: clamp(1rem, 2.2vw, 1.5rem);
+}
 
+p {
+  font-size: clamp(0.9rem, 1.5vw, 1.1rem);
 }
 
 #title,#título,p{
@@ -28,7 +31,6 @@ p{
 
 #title{
     color: #0019a8;
-    font-size: 1.5vw;
     border-left: 2px solid #002fff;
     padding: 2%;
 }
@@ -46,6 +48,7 @@ p{
     color: #010b44;
     border-left: 2px solid #002fff;
     padding: 2%;
+    text-transform: none;
 }
 
 .h-main{
@@ -77,11 +80,16 @@ p{
     height: 10%;
 }
 
+.img-li3{
+    width: 18%;
+}
+
 .p-li3{
     color: rgb(255, 255, 255);
     text-align: left;
     width: 80%;
-    height: 40%;
+    height: 30%;
+    text-transform: none;
 
 }
 
